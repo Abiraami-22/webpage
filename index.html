@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Intro</title>
+        <style>
+            img {
+                width: 165px;
+                height:185px;
+                border-radius:25px;
+                float:left;
+                margin-right: 55px;
+            }
+            body {
+                background-color: rgb(199, 238, 241);
+                padding: 100px;   /* space around the entire page */
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="intro">
+    <img src="image/image.png" alt="">
+
+    <div class="details">
+        <h2>Name: <span class="normal">Abiraami.K</span></h2>
+        <h2>Department: <span class="normal">Computational Engineering and Mechanics</span></h2>
+        <h2>Native: <span class="normal">Coimbatore, TamilNadu</span></h2>
+        <h2>Roll No: <span class="normal">AM25B001</span></h2>
+    </div>
+</div>
+        <style>
+            .normal {
+            font-weight: normal;
+            }
+            li {
+                font-size: 23px;
+                line-height: 1.5;
+            }
+            h1{
+                display: inline-block;
+                margin-top: 40px;
+                margin-bottom: 10px;
+                margin-right: 60px;
+            }
+            .two-blocks {
+    display: flex;
+    gap: 80px;         /* space BETWEEN the two blocks */
+    margin-top: 40px;  /* space above the blocks */
+}
+
+.box {
+    width: 300px;      /* set width for a neat layout */
+}
+
+        </style>
+    <div class="two-blocks">
+    
+    <div class="box">
+        <h1>Hobbies</h1>
+        <ul>
+            <li>Badminton</li>
+            <li>Watching movies</li>
+            <li>Dancing</li>
+            <li>Hanging out with friends</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h1>Aspirations</h1>
+        <ul>
+            <li>Explore Tech projects</li>
+            <li>Learn and ideate Web Applications</li>
+            <li>Become skilled in Trading</li>
+            <li>To travel the world</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h1>Contact</h1>
+        <ul>
+        <li>am25b001@smail.iitm.ac.in</li>
+        <li>9342410037</li>
+        </ul>
+    </div>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+
+    <style>
+        #widgets {
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: flex-end;
+            gap:20px;
+            margin-top:30px;
+        }
+        #weather {
+    flex: 1 1 300px;         /* grow/shrink, minimum width 300px */
+    padding: 20px;
+    height:200px;
+    width: 500px;
+    border: 2px solid #aaa;
+    border-radius: 10px;
+    background-color: #f0f8ff;
+    margin-bottom: 30px;
+}
+    
+/* Map widget */
+#map {
+
+    flex: 2 1 500px;         /* map takes more space */
+    height: 200px; 
+    width: 540px;          /* fixed height required for Leaflet */
+    border: 2px solid #aaa;
+    border-radius: 10px;
+}
+    </style>
+<div id="widgets">
+
+    <div class="widget-block">
+        <h2 class="widget-title">Weather</h2>
+        <div id="weather"></div>
+    </div>
+
+    <div class="widget-block">
+        <h2 class="widget-title">Location</h2>
+        <div id="map"></div>
+    </div>
+
+</div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+    </body>
+</html>
